@@ -5,7 +5,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Lab</title>
+    <title>PHP site</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -17,9 +17,11 @@
             <div class="content">
                 <ul>
                     <?php foreach($menu as $link => $label): ?>
-                        <li><a href="<?php echo $link; ?>"><?php echo $label; ?></a></li>
+                        <?php $isActive = (basename($_SERVER['PHP_SELF']) == $link) ? 'active' : ''; ?>
+                        <li><a href="<?php echo $link; ?>" class="<?php echo $isActive; ?>"><?php echo $label; ?></a></li>
                     <?php endforeach; ?>
                 </ul>
+
             </div>
         </div>
     </div>

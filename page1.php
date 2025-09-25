@@ -6,10 +6,11 @@ $imagePath = "./images/php.jpg";
 $interactiveImagePath = "./images/fox.jpg";
 
 $content = [
-    2 => "<p>Block 1</p>
+    2 => "<p>Block 2</p>
           <a href=" . $link . " target=\"_blank\">Official PHP link</a>
           <p>" . $currentFileName . "</p>",
-    3 => "<img src=". $imagePath . " alt=\"image\" style=\"width:100%; max-width:300px;\">",
+    3 => "<p>Block 3</p>
+          <img src=". $imagePath . " alt=\"image\" style=\"width:100%; max-width:300px;\">",
     4 => "<p>Block 4</p>
           <p>Point list:</p>
           <ul>
