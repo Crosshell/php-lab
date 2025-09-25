@@ -60,10 +60,38 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
 }
 
+.content ul li a {
+    display: inline-block;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #6ba8f8, #4476d6);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.content ul li a:hover {
+    background: linear-gradient(135deg, #4476d6, #6ba8f8);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.content ul li a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
 .block6 .content{
-    text-align: end ;
+    display: inline-flex;
+    justify-content: space-around;
 }
 
 

@@ -1,17 +1,36 @@
 <?php
 
+$link = "https://www.php.net";
+$currentFileName = basename($_SERVER['PHP_SELF']);
+$imagePath = "./images/php.jpg";
+$interactiveImagePath = "./images/fox.jpg";
+
 $content = [
-    2 => "<p>Це перший абзац тексту для блоку 2</p><p>Другий абзац блоку 2</p>",
-    3 => "<p>Блок 3 містить свій текст</p><p>Другий абзац для блоку 3</p>",
-    4 => "<p>Текст для блоку 4</p>
-          <p>Нумерований список:</p>
+    2 => "<p>Block 1</p>
+          <a href=" . $link . " target=\"_blank\">Official PHP link</a>
+          <p>" . $currentFileName . "</p>",
+    3 => "<img src=". $imagePath . " alt=\"image\" style=\"width:100%; max-width:300px;\">",
+    4 => "<p>Block 4</p>
+          <p>Point list:</p>
+          <ul>
+              <li>Adipisicing</li>
+              <li>Lorem</li>
+              <li>ipsum</li>
+          </ul>",
+    5 => "<p>Block 5</p>
+          <p>Number list:</p>
           <ol>
-              <li>Перший пункт списку</li>
-              <li>Другий пункт списку</li>
-              <li>Третій пункт списку</li>
+              <li>Aperiam</li>
+              <li>Debitis</li>
+              <li>Lorem</li>
           </ol>",
-    5 => "<p>Текст для блоку 5.</p><p>Другий абзац блоку 5</p>",
-    6 => "<p>Завершальний текст блоку 6</p><p>" . basename($_SERVER['PHP_SELF']) . "</p>"
+    6 => '<p>Block 6:</p>
+          <img src=' . $interactiveImagePath. ' usemap="#map1" alt="Map" style="width:50%;">
+          <map name="map1">
+              <area shape="rect" coords="0,0,100,100" href="page1.php" alt="Зона 1">
+              <area shape="circle" coords="150,75,50" href="page2.php" alt="Зона 2">
+              <area shape="poly" coords="200,0,250,50,200,100,150,50" href="page5.php" alt="Зона 3">
+          </map>',
 ];
 
 include "./samples/sample.php";
