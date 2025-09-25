@@ -1,29 +1,29 @@
 <?php
 
-$link = "https://www.php.net";
+$link = "https://github.com";
 $currentFileName = basename($_SERVER['PHP_SELF']);
 $imagePath = "./images/php4.jpg";
 $interactiveImagePath = "./images/cat3.jpg";
 
 $content = [
     2 => "<p>Block 2</p>
-          <a href=" . $link . " target=\"_blank\">Official PHP link</a>
+          <a href=" . $link . " target=\"_blank\">Official GitHub link</a>
           <p>" . $currentFileName . "</p>",
     3 => "<p>Block 3</p>
           <img src=". $imagePath . " alt=\"image\" style=\"width:100%; max-width:300px;\">",
     4 => "<p>Block 4</p>
           <p>Point list:</p>
           <ul>
-              <li>Adipisicing</li>
-              <li>Lorem</li>
-              <li>ipsum</li>
+              <li>Repudiandae</li>
+              <li>Ullam</li>
+              <li>Consectetur</li>
           </ul>",
     5 => "<p>Block 5</p>
           <p>Number list:</p>
           <ol>
-              <li>Aperiam</li>
-              <li>Debitis</li>
-              <li>Lorem</li>
+              <li>Adipisicing</li>
+              <li>Elit</li>
+              <li>Architecto</li>
           </ol>",
     6 => '<p>Block 6:</p>
           <img src=' . $interactiveImagePath. ' usemap="#map1" alt="Map" style="width:50%;">
